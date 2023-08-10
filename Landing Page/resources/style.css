@@ -55,13 +55,13 @@ nav ul li a {
 .hero-content h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color:#333;
+    color: #333;
 }
 
 .hero-content p {
     font-size: 18px;
     margin-bottom: 40px;
-    color:#333;
+    color: #333;
 }
 
 .hero-content .btn {
@@ -121,7 +121,7 @@ nav ul li a {
 .pricing-container .plan ul {
     list-style: circle;
     padding: 0;
-    margin-left: 20px; 
+    margin-left: 20px;
     text-align: left;
 }
 
@@ -152,8 +152,6 @@ nav ul li a {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-
 
 #contact {
     padding: 60px 0;
@@ -194,4 +192,96 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Media queries for different screen sizes */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    /* Adjust header styles for mobile */
+    header {
+        padding: 10px;
+    }
+
+    /* Adjust hero section styles for mobile */
+    #hero {
+        padding: 50px 0;
+    }
+
+    /* Adjust feature container styles for mobile */
+    .feature-container {
+        flex-direction: column;
+    }
+
+    /* Adjust pricing container styles for mobile */
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    /* Adjust contact form styles for mobile */
+    form input,
+    form textarea,
+    form button {
+        width: 80%;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Adjust header styles for tablet */
+    header {
+        padding: 15px;
+    }
+
+    /* Adjust hero section styles for tablet */
+    #hero {
+        padding: 80px 0;
+    }
+
+    /* Adjust feature container styles for tablet */
+    .feature-container {
+        justify-content: space-between;
+    }
+
+    /* Adjust pricing container styles for tablet */
+    .pricing-container {
+        justify-content: space-between;
+    }
+
+    /* Adjust contact form styles for tablet */
+    form input,
+    form textarea,
+    form button {
+        width: 70%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    /* Reset header padding for desktop */
+    header {
+        padding: 20px;
+    }
+
+    /* Reset hero section padding for desktop */
+    #hero {
+        padding: 100px 0;
+    }
+
+    /* Reset feature container styles for desktop */
+    .feature-container {
+        flex-direction: row;
+    }
+
+    /* Reset pricing container styles for desktop */
+    .pricing-container {
+        flex-direction: row;
+    }
+
+    /* Reset contact form styles for desktop */
+    form input,
+    form textarea,
+    form button {
+        width: 60%;
+    }
 }
