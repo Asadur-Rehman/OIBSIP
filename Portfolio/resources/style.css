@@ -15,54 +15,59 @@ body {
 header {
     background-color: #333;
     text-align: center;
-    padding: 40px 0;
+    padding: 4% 0;
     color: #fff;
 }
 
 .profile-image img {
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    max-width: 200px;
+    height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
 /* Style the contact section */
 #contact {
-    padding: 60px 0;
+    padding: 6% 0;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 #contact h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 #contact ul {
     list-style: none;
+    font-size: 18px;
+    color: #555;
 }
 
 #contact ul li {
-    font-size: 18px;
     margin-bottom: 10px;
 }
 
 /* Style the projects section */
 #projects {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 6% 0;
     text-align: center;
 }
 
 #projects h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .project {
-    width: 80%;
+    width: 90%;
     max-width: 400px;
-    margin: 0 auto 40px;
-    padding: 20px;
+    margin: 0 auto 20px;
+    padding: 4%;
     background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -71,37 +76,52 @@ header {
 .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .project p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #555;
 }
 
 .project .btn {
-    padding: 12px 24px;
+    padding: 8px 16px;
     background-color: #ff6600;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.project .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Style the resume section */
 #resume {
-    padding: 60px 0;
+    padding: 6% 0;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 #resume h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 #resume .btn {
-    padding: 12px 24px;
+    padding: 8px 16px;
     background-color: #ff6600;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#resume .btn:hover {
+    background-color: #ff4500;
 }
 
 /* Style the footer */
@@ -109,5 +129,18 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 4% 0;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .profile-image img {
+        width: 50%;
+        max-width: 150px;
+    }
+    
+    .project {
+        width: 100%;
+        max-width: 100%;
+    }
 }
